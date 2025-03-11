@@ -1,154 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="myHeader">
-        <img class = "logo" src="/img/Circle.png" alt="logo">
-        <nav class="containerBar">
-            <div class="menu">
-                <a href="#intro" class="home">Home</a>
-                <a href="#projects" class="aHeader">Projects</a>
-                <a href="#services" class="aHeader">Services</a>
-            </div>
-        </nav>
-         <a href="#contact" class="contact">Contact Us</a>
-
-
+      <img class="logo" src="/img/Circle.png" alt="logo" />
+      <nav class="containerBar">
+        <div class="menu">
+          <a href="#intro" class="home">Home</a>
+          <a href="#projects" class="aHeader">Projects</a>
+          <a href="#services" class="aHeader">Services</a>
+        </div>
+      </nav>
+      <a href="#contact" class="contact background-blue">Contact Us</a>
     </header>
     <div id="descriptionIntro" class="container-intro">
+      <div class="intro">
+        <h1 id="intro">Empower Your Business With Stunning Design!</h1>
 
-<div class = "intro">
+        <p class="description">
+          Circle is a digital design and development studio. We design and
+          develop astonishing websites <br />
+          and mobile apps.
+        </p>
 
-        <h1 id= "intro">Empower Your Business With Stunning Design!</h1>
-
-        <p class = "description">Circle is a digital design and development studio. We design and develop astonishing websites <br> and mobile apps.</p>
-
-    <div class="buttonsIntro">
-        <button id="touch">Get in touch</button>
-        <button id="work">See our work</button>
-    </div>
-
-</div>
-
-    <img id="imgHero" src="/img/Hero Image.png" alt="Imagen">
-
-</div>
-<div class = "logos">
-
-    <!-- <img src="/img/Clients (Grayscale).png" alt=""> -->
-    <img src="/img/Microsoft Logo.svg" alt="Microsoft" class="img-microsoft">
-    <img src="/img/Google Logo.svg" alt="Google" class="img-logo">
-    <img src="/img/FedEx Logo.svg" alt="FedEx" class="img-logo">
-    <img src="/img/Amazon Logo.svg" alt="Amazon" class="img-logo">
-    <img src="/img/Airbnb Logo.svg" alt="Airbnb" class="img-airbnb">
-
-</div>
-
-  <article class="project-card">
-    <h1 class="title">Recent Projects</h1>
-
-<div class="container-projects"> 
-        <h2 class="post-title"></h2>
-        <p class="post-address"></p>
-        <p class="post-phone"></p>
-    </div>
-</div>
-
-</article>
-
-<div class="container" id="opinions">
-
-    <div class="col1">
-        <img src="/img/Character=Angela, Skin tone=White, Posture=11 Party.png" alt="image">
-        <h1>Hear What Our Clients Have to Say</h1>
-        <img src="/img/Character=Kim, Skin tone=White, Posture=26 Crossing Finger.png" alt="">
-    </div>
-
-    <div class="col2">
-        <p>"Circle helped us through every stage of our startup. <br> We really enjoyed working with you."" </p>
-    </div>
-
-
-    <div class="col3">
-      <img src="/img/Person=Ed, Skin Tone=White, Posture=16 Winking.png" alt="">
-        <div class = "info">
-      <img src="/img/Client's Information.png" alt="">
+        <div class="buttonsIntro">
+          <button id="touch" class="background-blue">Get in touch</button>
+          <button id="work">See our work</button>
         </div>
-      <img src="/img/Person=Mattew, Skin Tone=White, Posture=20 Like.png" alt="">
+      </div>
+
+      <img id="imgHero" src="/img/Hero Image.png" alt="Imagen" />
+    </div>
+    <div class="logos">
+      <!-- <img src="/img/Clients (Grayscale).png" alt=""> -->
+      <img
+        src="/img/Microsoft Logo.svg"
+        alt="Microsoft"
+        class="img-microsoft"
+      />
+      <img src="/img/Google Logo.svg" alt="Google" class="img-logo" />
+      <img src="/img/FedEx Logo.svg" alt="FedEx" class="img-logo" />
+      <img src="/img/Amazon Logo.svg" alt="Amazon" class="img-logo" />
+      <img src="/img/Airbnb Logo.svg" alt="Airbnb" class="img-airbnb" />
     </div>
 
-</div>
+    <article class="project-card">
+      <h1 class="title">Recent Projects</h1>
 
-<h1 class="title">Our Services</h1>
-<div class="container-services">
+      <div class="container-projects">
+        <!-- Fila -->
+        <div class="project">
+          <!-- Columnas -->
+          <h2 class="post-title"></h2>
+          <p class="post-address"></p>
+          <p class="post-phone"></p>
+        </div>
+      </div>
+    </article>
 
-<div class="services">
-    <i class="fa-solid fa-pen-nib"></i>
-    <h2>User Interface Design</h2>
-    <p class="p-services">Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-    <div class="learn">
-        <a href="">Learn More</a>
+    <div class="container" id="opinions">
+      <div class="col1">
+        <img
+          src="/img/Character=Angela, Skin tone=White, Posture=11 Party.png"
+          alt="image"
+        />
+        <h1>Hear What Our Clients Have to Say</h1>
+        <img
+          src="/img/Character=Kim, Skin tone=White, Posture=26 Crossing Finger.png"
+          alt=""
+        />
+      </div>
+
+      <div class="col2">
+        <p>
+          "Circle helped us through every stage of our startup. <br />
+          We really enjoyed working with you.""
+        </p>
+      </div>
+
+      <div class="col3">
+        <img
+          src="/img/Person=Ed, Skin Tone=White, Posture=16 Winking.png"
+          alt=""
+        />
+        <div class="info">
+          <img src="/img/Client's Information.png" alt="" />
+        </div>
+        <img
+          src="/img/Person=Mattew, Skin Tone=White, Posture=20 Like.png"
+          alt=""
+        />
+      </div>
     </div>
-</div>
-<div class="services">
-    <i class="fa-solid fa-arrow-pointer"></i>
-    <h2>User Experience Design</h2>
-    <p class="p-services">Circle always focuses on delivering the best user experience to your customers.</p>
-    <div class="learn">
-        <a href="">Learn More</a>
+
+    <h1 class="title">Our Services</h1>
+    <div class="container-services">
+      <div class="services">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h2>User Interface Design</h2>
+        <p class="p-services">
+          Circle provides you with a stunning user interface design that is
+          accessible to everyone.
+        </p>
+        <div class="learn">
+          <a href="">Learn More</a>
+        </div>
+      </div>
+      <div class="services">
+        <i class="fa-solid fa-arrow-pointer"></i>
+        <h2>User Experience Design</h2>
+        <p class="p-services">
+          Circle always focuses on delivering the best user experience to your
+          customers.
+        </p>
+        <div class="learn">
+          <a href="">Learn More</a>
+        </div>
+      </div>
+      <div class="services">
+        <i class="fa-solid fa-code"></i>
+        <h2>Application Development</h2>
+        <p class="p-services">
+          We develop high-quality mobile and web applications using the latest
+          technology stack.
+        </p>
+        <div class="learn">
+          <a href="">Learn More</a>
+        </div>
+      </div>
     </div>
-</div>
-<div class="services">
-    <i class="fa-solid fa-code"></i>
-    <h2>Application Development</h2>
-    <p class="p-services">We develop high-quality mobile and web applications using the latest technology stack.</p>
-    <div class="learn">
-        <a href="">Learn More</a>
+
+    <div class="help">
+      <h1 class="question">Do you have any questions?</h1>
+      <p class="learn">Let us help you!</p>
+      <div class="suscribe">
+        <div
+          class="input-box"
+          style="
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <i class="fa fa-envelope"></i>
+          <input
+            class="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <button class="suscribe-btn">Suscribe</button>
+      </div>
     </div>
-</div>
 
-</div>
+    <footer class="footer-container">
+      <div class="footerInfo">
+        <img class="footer-logo" src="/img/Circle.png" alt="logo" />
+        <p class="footer-adress">
+          2972 Westheimer Rd. Santa Ana, <br />
+          Illinois 85486
+        </p>
+      </div>
 
-<div class="help">
-
-    <h1 class="question">Do you have any questions?</h1>
-    <p class="learn">Let us help you!</p>
-    <div class="suscribe">
-
-        <input class="email" id="email" type="email" placeholder=" Enter your email"> <button class="suscribe-btn">Suscribe</button>
-
-    </div>
-
-<footer class="footer-container">
-
-<div class="footerInfo">
-    <img class = "footer-logo" src="/img/Circle.png" alt="logo">
-    <p class="footer-adress">2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
-</div>
-
-<div class="footer-options">
-    <div class="footer">
-        <a href="">Team</a>
-        <a href="">Services</a>
-    </div>
-    <div class="footer">
-        <a href="">About Us</a>
-        <a href="">Press</a>
-    </div>
-    <div class="footer">
-        <a href="">Projects</a>
-        <a href="">Privacy Policy</a>
-    </div>
-</div>
-
-</footer>
+      <div class="footer-options">
+        <div class="footer">
+          <a href="">Team</a>
+          <a href="">Services</a>
+        </div>
+        <div class="footer">
+          <a href="">About Us</a>
+          <a href="">Press</a>
+        </div>
+        <div class="footer">
+          <a href="">Projects</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
