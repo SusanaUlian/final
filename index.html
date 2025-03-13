@@ -11,16 +11,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Proyecto Final Modulo</title>
   </head>
   <body>
     <header class="myHeader">
       <img class="logo" src="/img/Circle.png" alt="logo" />
       <nav class="containerBar">
+        <button type="button" class="boton-menu">Menú</button>
         <div class="menu">
-          <a href="#intro" class="home">Home</a>
-          <a href="#projects" class="aHeader">Projects</a>
-          <a href="#services" class="aHeader">Services</a>
+           <a href="#intro" class="home">Home</a>
+           <a href="#projects" class="aHeader">Projects</a>
+           <a href="#services" class="aHeader">Services</a>
         </div>
       </nav>
       <a href="#contact" class="contact background-blue">Contact Us</a>
@@ -41,15 +42,15 @@
         </div>
       </div>
 
+      <div class="relative">
       <img id="imgHero" src="/img/Hero Image.png" alt="Imagen" />
+      <img src="/img/Card 1.png" alt="tarjeta" class="img-card1">
+      <img src="/img/Card 2.png" alt="card" class="img-card2">
+    </div>
     </div>
     <div class="logos">
-      <!-- <img src="/img/Clients (Grayscale).png" alt=""> -->
-      <img
-        src="/img/Microsoft Logo.svg"
-        alt="Microsoft"
-        class="img-microsoft"
-      />
+      
+      <img src="/img/Microsoft Logo.svg" alt="Microsoft" class="img-microsoft"/>
       <img src="/img/Google Logo.svg" alt="Google" class="img-logo" />
       <img src="/img/FedEx Logo.svg" alt="FedEx" class="img-logo" />
       <img src="/img/Amazon Logo.svg" alt="Amazon" class="img-logo" />
@@ -75,11 +76,13 @@
         <img
           src="/img/Character=Angela, Skin tone=White, Posture=11 Party.png"
           alt="image"
+          class="emoji"
         />
         <h1>Hear What Our Clients Have to Say</h1>
         <img
           src="/img/Character=Kim, Skin tone=White, Posture=26 Crossing Finger.png"
-          alt=""
+          alt="img"
+          class="emoji"
         />
       </div>
 
@@ -93,14 +96,16 @@
       <div class="col3">
         <img
           src="/img/Person=Ed, Skin Tone=White, Posture=16 Winking.png"
-          alt=""
+          alt="image"
+          class="emoji"
         />
         <div class="info">
           <img src="/img/Client's Information.png" alt="" />
         </div>
         <img
           src="/img/Person=Mattew, Skin Tone=White, Posture=20 Like.png"
-          alt=""
+          alt="image"
+          class="emoji"
         />
       </div>
     </div>
@@ -146,23 +151,12 @@
       <h1 class="question">Do you have any questions?</h1>
       <p class="learn">Let us help you!</p>
       <div class="suscribe">
-        <div
-          class="input-box"
-          style="
-            background: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          "
-        >
-          <i class="fa fa-envelope"></i>
-          <input
+        <input
             class="email"
             id="email"
             type="email"
-            placeholder="Enter your email"
+            placeholder=" Enter your email"
           />
-        </div>
 
         <button class="suscribe-btn">Suscribe</button>
       </div>

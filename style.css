@@ -6,7 +6,8 @@
 
 body {
   background-color: #f2f4fc;
-  min-height: 100%;
+  min-height: 100%; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .myHeader {
@@ -15,8 +16,8 @@ body {
   font-weight: bolder;
   font-size: medium;
   height: 60px;
-  margin: 60px 0px;
-  margin-left: 70px;
+  margin: 5%;
+  width: 90vw;
 }
 a {
   text-decoration: none;
@@ -39,10 +40,8 @@ a {
 }
 .menu {
   height: 22px;
-  gap: 60px;
   text-align: center;
-  margin: 0px 300px;
-  word-spacing: 25px;
+  word-spacing: 25px; 
 }
 .contact {
   padding: 17px 27px;
@@ -52,22 +51,21 @@ a {
   color: white;
   border-radius: 3px;
 }
+.containerBar {
+    margin: 0% 30%;
+}
 .intro {
-  width: 90%;
-  margin: 0 auto;
-  height: 460px;
+  width: 90vw;
+  margin: 5.5%;
+  height: 90%;
   border: 1px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-right: 20px;
-  padding-top: 50px;
 }
 #intro {
   font-size: 60px;
   color: #3a3c4b;
-  padding-right: 25px;
-  padding-top: 50px;
 }
 .description {
   font-size: 20px;
@@ -97,29 +95,28 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 #imgHero {
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 7%;
 }
 .logos {
   display: flex;
-  flex-direction: row;
-  height: 96px;
-  padding: 120px 27px;
+  height: 85px;
+  padding: 7% 3%;
 }
 .img-logo {
-  height: 56px;
-  padding: 130px 50px 10px 50px;
+  height: 40px;
+  padding: 7% 5%;
 }
 .img-microsoft {
   height: 26px;
-  padding: 145px 50px 10px 50px;
+  padding: 7% 3%;
 }
 .img-airbnb {
   height: 32px;
-  padding: 140px 50px 10px 50px;
+  padding: 7% 3%;
 }
 .col1 {
   display: flex;
@@ -163,13 +160,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 50px;
-  height: 500px;
+  margin: 3.5%;
+  height: 450px;
 }
 .title {
-  padding: 120px 70px 40px 70px;
+  padding: 10% 3% 3% 3%;
   font-size: 38px;
   color: #3a3c4b;
+  margin: 2% 2% 0 2%;
 }
 i {
   background: rgb(179, 215, 227);
@@ -181,13 +179,13 @@ i {
   font-size: 16px;
   font-weight: bold;
   color: #3a3c4b;
-  padding: 5px 20px;
+  padding: 2%;
   box-sizing: border-box;
-  height: 390px;
+  height: 420px;
   text-align: left;
   border: 1px;
   background-color: white;
-  margin: 10px;
+  margin: 2%;
 }
 .learn {
   margin-top: 35px;
@@ -198,24 +196,27 @@ i {
 .p-services {
   font-size: 18px;
   font-weight: lighter;
+  color: #3a3c4b;
 }
 .help {
   background-color: #ffc600;
   text-align: center;
-  height: 500px;
+  height: 100%;
 }
 .question {
   font-size: 38px;
   color: #3a3c4b;
-  padding-top: 100px;
+  padding-top: 13%;
+  margin-top: 13%;
 }
 .email {
-  margin: 30px 11px 100px 5px;
+  margin: 2%;
   font-size: 12px;
   height: 65px;
+  width: 20%;
 }
 .suscribe-btn {
-  padding: 25px 65px;
+  padding: 2% 4%;
   background-color: #072ac8;
   color: white;
   border-radius: 3%;
@@ -229,7 +230,7 @@ i {
 .footer-container {
   display: flex;
   flex-direction: row;
-  padding: 100px;
+  padding: 5%;
   justify-content: space-between;
 }
 .footer-options {
@@ -251,26 +252,84 @@ i {
   color: #6b708d;
 }
 .footer-logo {
-  height: 30px;
+  height: 25px;
   text-align: left;
   padding-top: 60px;
 }
 .container-projects {
-  padding: 5px 20px;
+  width: 90vw;  
   box-sizing: border-box;
   border: 1px;
-  margin: 10px;
   display: flex;
   font-size: 16px;
   font-weight: bold;
   color: #3a3c4b;
-  margin: 30px;
+  margin:3%
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  padding: 10px;
+  margin: 3%;
+  padding: 2%;
   background-color: white;
+}
+.project-card {
+    width: 98vw;
+}
+.custom-cursor {
+    cursor: pointer;
+}
+.moreInfo {
+    padding: 2%;
+    color:#072ac8;
+    text-decoration:underline;
+}
+.information {
+    margin: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub-title {
+    font-size: 20px;
+    color: grey;
+    margin: 0% 5% 2% 5%;
+}
+.img-card1 {
+    position: absolute;
+    top: -30px;
+    left: -140px;
+}
+.img-card2 {
+    position:absolute;
+    bottom: -150px;
+    right: -80px;
+}
+.relative {
+    position: relative;
+}
+.boton-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .container-intro,
+    .container-projects,
+    .container-services,
+    .img-microsoft,
+    .img-airbnb {
+        flex-direction: column;
+    }
+    .img-card1,
+    .img-card2,
+    .emoji,
+    .menu,
+    .contact,
+    .img-logo {
+        display: none;
+    }
+    .boton-menu {
+        display: block;
+        align-items: end;
+    }
 }
