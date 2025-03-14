@@ -15,7 +15,6 @@ body {
   text-decoration: none;
   font-weight: bolder;
   font-size: medium;
-  height: 60px;
   margin: 5%;
   width: 90vw;
 }
@@ -23,20 +22,18 @@ a {
   text-decoration: none;
 }
 .home {
-  height: 22px;
   color: #1860f0;
   font-size: 16px;
   line-height: 22px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .aHeader {
-  height: 22px;
   font-size: 16px;
   color: #6b708d;
   font-family: Arial, Helvetica, sans-serif;
 }
 .logo {
-  height: 18px;
+  height: 18px; 
 }
 .menu {
   height: 22px;
@@ -57,7 +54,6 @@ a {
 .intro {
   width: 90vw;
   margin: 5.5%;
-  height: 90%;
   border: 1px;
   display: flex;
   flex-direction: column;
@@ -93,6 +89,7 @@ a {
 .container-intro {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
+  width: 95%;
 }
 #imgHero {
   height: 500px;
@@ -124,19 +121,18 @@ a {
   justify-content: space-between;
   align-items: center;
   color: white;
-  height: 250px;
 }
 .container {
   margin-top: 150px;
   padding: 10px 50px;
   border: 1px;
   background-color: #292e47;
-  height: 600px;
   background-image: url(/img/Ellipse\ 27.png), url(/img/Ellipse\ 26.png),
     url(/img/Ellipse\ 25.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  width: 91%;
 }
 .col2 {
   text-align: center;
@@ -144,13 +140,11 @@ a {
   color: rgb(206, 206, 25);
   font-weight: bold;
   justify-content: space-between;
-  height: 130px;
 }
 .col3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 150px;
   padding-top: 25px;
 }
 .info {
@@ -161,7 +155,6 @@ a {
   flex-direction: row;
   justify-content: space-around;
   margin: 3.5%;
-  height: 450px;
 }
 .title {
   padding: 10% 3% 3% 3%;
@@ -202,18 +195,22 @@ i {
   background-color: #ffc600;
   text-align: center;
   height: 100%;
+  width: 97.5vw;
+  padding-bottom: 8%;
 }
 .question {
   font-size: 38px;
   color: #3a3c4b;
-  padding-top: 13%;
+  padding-top: 10%;
   margin-top: 13%;
+  text-align: center;
 }
 .email {
   margin: 2%;
   font-size: 12px;
   height: 65px;
   width: 20%;
+  text-align: center;
 }
 .suscribe-btn {
   padding: 2% 4%;
@@ -257,20 +254,18 @@ i {
   padding-top: 60px;
 }
 .container-projects {
-  width: 90vw;  
   box-sizing: border-box;
   border: 1px;
   display: flex;
   font-size: 16px;
   font-weight: bold;
   color: #3a3c4b;
-  margin:3%
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  margin: 3%;
+  margin: 4%; 
   padding: 2%;
   background-color: white;
 }
@@ -302,7 +297,7 @@ i {
 .img-card2 {
     position:absolute;
     bottom: -150px;
-    right: -80px;
+    right: -65px;
 }
 .relative {
     position: relative;
@@ -317,19 +312,29 @@ i {
     .container-projects,
     .container-services,
     .img-microsoft,
-    .img-airbnb {
+    .img-airbnb,
+    .footer-container {
         flex-direction: column;
+        justify-content: center;
     }
     .img-card1,
     .img-card2,
     .emoji,
     .menu,
     .contact,
-    .img-logo {
+    .img-logo,
+    .footer {
         display: none;
     }
     .boton-menu {
         display: block;
         align-items: end;
+    }
+    #imgHero {
+        height: 300px;
+        width: 300px;
+    }
+    * {
+        align-items: center;
     }
 }

@@ -52,3 +52,13 @@ boton.addEventListener("mouseout", () => {
 // pulsar.addEventListener("click", () => {
 //     pulsar.innerHTML += 
 // })
+
+
+// validacion email
+
+
+// document.querySelector('.email').addEventListener('input' function() {
+//     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     return regex.test(email);
+//     const valido = InputEvent.email.style.backgroundColor = "red"
+// })
