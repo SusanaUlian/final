@@ -57,8 +57,25 @@ boton.addEventListener("mouseout", () => {
 // validacion email
 
 
-// document.querySelector('.email').addEventListener('input' function() {
-//     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     return regex.test(email);
-//     const valido = InputEvent.email.style.backgroundColor = "red"
-// })
+let emailId = document.querySelector('.email');
+let errorMsg = document.querySelector('.error-msg');
+let mailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+function validarMail () {
+    
+    if(emailId.value.match(mailRegex)) {
+        emailId.style.border = '2px solid green';
+        errorMsg.style.display = 'none';
+    } 
+    else if (emailId.value === "") {
+        errorMsg.style.display = 'none';
+        emailId.style.border = '2px solid gray';
+    }
+    else {
+        emailId.style.border = '2px solid red'; 
+        errorMsg.style.display = 'block';
+        errorMsg.style.color = 'red';
+    }
+}
+emailId.addEventListener('input', validarMail);
+validarMail();

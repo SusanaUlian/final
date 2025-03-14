@@ -194,23 +194,26 @@ i {
 .help {
   background-color: #ffc600;
   text-align: center;
-  height: 100%;
   width: 97.5vw;
-  padding-bottom: 8%;
+  padding-bottom: 12%;
 }
 .question {
   font-size: 38px;
   color: #3a3c4b;
   padding-top: 10%;
-  margin-top: 13%;
+  margin-top: 15%;
   text-align: center;
 }
 .email {
-  margin: 2%;
   font-size: 12px;
-  height: 65px;
+  height: 60px;
   width: 20%;
-  text-align: center;
+  border-color: #292e47;
+}
+.error-msg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding-right: 15%;
 }
 .suscribe-btn {
   padding: 2% 4%;
