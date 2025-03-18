@@ -186,7 +186,8 @@ i {
   color: #072ac8;
   margin-bottom: 20px;
 }
-.p-services {
+.p-services,
+.moreP {
   font-size: 18px;
   font-weight: lighter;
   color: #3a3c4b;
@@ -208,7 +209,6 @@ i {
   font-size: 12px;
   height: 60px;
   width: 20%;
-  border-color: #292e47;
 }
 .error-msg {
     font-family: Arial, Helvetica, sans-serif;
@@ -256,7 +256,8 @@ i {
   text-align: left;
   padding-top: 60px;
 }
-.container-projects {
+.container-projects,
+.other-projects {
   box-sizing: border-box;
   border: 1px;
   display: flex;
@@ -264,7 +265,6 @@ i {
   font-weight: bold;
   color: #3a3c4b;
 }
-
 .project {
   display: flex;
   flex-direction: column;
@@ -308,6 +308,53 @@ i {
 .boton-menu {
     display: none;
 }
+.hidden {
+display: none;
+}
+
+/* contact page */
+
+.container-subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 5%;
+}
+#email,
+#tel {
+width: 40vw;
+height: 5vw;
+background-color: #e5e5e9;
+font-size: medium;
+color: #6b708d;
+border-style: none;
+}
+#name{
+    width: 87.5vw;
+    height: 5vw;
+    background-color: #e5e5e9;
+    font-size: medium;
+    border-style: none;
+    margin: 2% 5%;
+}
+#message {
+    width: 87.5vw;
+    height: 15vw;
+    background-color: #e5e5e9;
+    font-size: medium;
+    border-style: none;
+    margin: 2%5%;
+}
+.button-contact {
+    color: white;
+    height: 15vw;
+}
+
 
 @media (max-width: 600px) {
 

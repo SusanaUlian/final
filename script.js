@@ -45,7 +45,15 @@ boton.addEventListener("mouseout", () => {
 
 // enlace segunda pag:
 
-// document.addEventListener('load', (MouseEvent))
+    function showP(event){
+        event.preventDefault();
+        const myP = document.querySelector('p.moreP');
+            myP.classList.toggle("hidden");
+    }
+
+    document.querySelectorAll('.learn a').forEach((enlace) => {
+        enlace.addEventListener("click", showP);
+    })
 // const pulsar = document.querySelectorAll("#learn")
 // pulsar.innerHTML = "" ;
 
@@ -64,15 +72,15 @@ let mailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 function validarMail () {
     
     if(emailId.value.match(mailRegex)) {
-        emailId.style.border = '2px solid green';
+        emailId.style.border = '4px solid rgb(144, 233, 11)';
         errorMsg.style.display = 'none';
     } 
     else if (emailId.value === "") {
         errorMsg.style.display = 'none';
-        emailId.style.border = '2px solid gray';
+        emailId.style.border = 'none';
     }
     else {
-        emailId.style.border = '2px solid red'; 
+        emailId.style.border = '4px solid red'; 
         errorMsg.style.display = 'block';
         errorMsg.style.color = 'red';
     }
