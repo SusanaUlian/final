@@ -11,6 +11,7 @@ async function getApiInfo() {
       name: brewery.name,
       address: `${brewery.address_1}, ${brewery.city}, ${brewery.state}`,
       phone: brewery.phone,
+      id: brewery.id,
     };
   });
   const projects = document.querySelector(".container-projects");
@@ -18,15 +19,22 @@ async function getApiInfo() {
 
 
   results.forEach((brewery) => {
+    console.log(brewery)
     projects.innerHTML += `<div class="project">
                         <img src="/img/fondoFlexJS.png" alt="image" width="265"/>
                         <h2 class="post-title">${brewery.name}</h2>
                         <p class="post-address">${brewery.address}</p>
                         <p class="post-phone">${brewery.phone}</p>
-                        <a href="/project-page/project.html" class="moreInfo">More Info...</a>
+                        <button onclick = "goToProject('${brewery.id}')" class="moreInfo">More Info...</a>
                      </div>`;
   });
 }
+
+function goToProject (id){
+  localStorage.setItem("breweryId", id)
+  window.location.href = "/project-page/project.html"
+}
+
 
 getApiInfo();
 
@@ -43,27 +51,12 @@ boton.addEventListener("mouseout", () => {
 })
 })
 
-// enlace segunda pag:
 
-    function showP(event){
-        event.preventDefault();
-        const myP = document.querySelector('p.moreP');
-            myP.classList.toggle("hidden");
-    }
 
-    document.querySelectorAll('.learn a').forEach((enlace) => {
-        enlace.addEventListener("click", showP);
-    })
-// const pulsar = document.querySelectorAll("#learn")
-// pulsar.innerHTML = "" ;
 
-// pulsar.addEventListener("click", () => {
-//     pulsar.innerHTML += 
-// })
 
 
 // validacion email
-
 
 let emailId = document.querySelector('.email');
 let errorMsg = document.querySelector('.error-msg');
@@ -87,3 +80,37 @@ function validarMail () {
 }
 emailId.addEventListener('input', validarMail);
 validarMail();
+
+
+// desplegable learn more
+
+
+// function showMore () {
+//   const myP = document.querySelectorAll('p.moreP');
+  
+//   for(let i = 0; i < myP.length; i++) {
+//     myP[i].classList.toggle('hidden');
+//   }
+// }
+// document.querySelectorAll('.more').addEventListener('click', showMore);
+
+function showMore(event) {
+  
+  event.preventDefault();
+  
+  const moreP = event.target.nextElementSibling;
+  
+  const link = event.target;
+  
+  moreP.classList.toggle('hidden');
+
+  if (moreP.classList.contains('hidden')) {
+    link.innerHTML = "Learn More";
+  } else {
+    link.innerHTML = "Show Less";
+  }
+}
+
+document.querySelectorAll('.more').forEach(link => {
+  link.addEventListener('click', showMore);
+});

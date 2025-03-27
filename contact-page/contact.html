@@ -12,35 +12,42 @@
         <nav class="containerBar">
           <button type="button" class="boton-menu">Menú</button>
           <div class="menu">
-             <a href="#intro" class="home">Home</a>
+             <a href="/index.html" class="home">Home</a>
              <a href="#projects" class="aHeader">Projects</a>
              <a href="#services" class="aHeader">Services</a>
           </div>
         </nav> 
       </header>
-      <form>
-        <div class="container-form">
+      <form class="form-contact">
+        
         <label for="name" class="sub-title">Full name*</label>
-        <input type="text" placeholder="Enter your full name" id="name">
+        <div class="contact-input">
+        <input type="text" placeholder="Enter your full name" id="name" class="form-input">
+        </div>  
 
-        <div class="container-subtitle">
-           <label for="email"class="sub-title">Email *</label>
-           <label for="tel" class="sub-title">Phone *</label>
+        <div class="divContact">
+
+          <div class="contact-input">   
+            <label for="tel" class="sub-title">Phone</label>
+           <input type="tel" placeholder="Enter your phone" id="tel" class="form-input">
+          </div> 
+            
+              <div class="contact-input">
+                <label for="email"class="sub-title">Email</label>
+                <input type="email"placeholder="Enter your email" id="email" class="form-input">   
+              </div>     
+              
         </div>
+                  <label for="message" class="sub-title">Message *</label>
+                  <div class="contact-input">
+                    <textarea type="text" placeholder="Write your message here..." id="message" class="form-input"></textarea>
+                  </div>   
 
-            <div class="container-contact">
-               
-                <input type="email"placeholder="Enter your email" id="email">
-               
-                <input type="tel" placeholder="Enter your phone" id="tel">
-            </div>    
-                    <label for="message" class="sub-title">Message</label>
-                    <input type="text" placeholder="Write your message here..." id="message">
-            <div class="button-contact">
-                <button>Submit</button>
+            <div>
+                <button class="button-contact">Submit</button>
             </div>
     </form>
-</div>      
+      
       <footer class="footer-container">
         <div class="footerInfo">
           <img class="footer-logo" src="/img/Circle.png" alt="logo" />
